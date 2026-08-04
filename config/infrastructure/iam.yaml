@@ -1,6 +1,6 @@
 bindings:
 
-  storage:
+  cloud_storage:
 
     bucket: mlb-data-lake
 
