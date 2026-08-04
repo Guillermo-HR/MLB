@@ -1,0 +1,5 @@
+dataset:
+
+  id: mlb_gold
+  description: >
+    Gold analytical layer used for reporting and dashboards.

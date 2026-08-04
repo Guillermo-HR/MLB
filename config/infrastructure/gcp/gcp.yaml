@@ -1,0 +1,14 @@
+project:
+  project_id: mlb-data-504219
+  project_number: 78809789979
+  name: MLB Data
+  region: us-central1
+  location: US
+
+services:
+  - serviceusage.googleapis.com
+  - cloudresourcemanager.googleapis.com
+  - iam.googleapis.com
+  - iamcredentials.googleapis.com
+  - storage.googleapis.com
+  - bigquery.googleapis.com
