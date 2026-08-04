@@ -12,6 +12,7 @@ def create_dataset(project_id: str, region: str, dataset: dict,) -> None:
             "mk",
             "--dataset",
             f"--location={region}",
+            f"--description={dataset['description']}",
             dataset_id,
             project=project_id,
         )
