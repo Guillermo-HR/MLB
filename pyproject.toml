@@ -9,7 +9,13 @@ description = "MLB Data Engineering Platform"
 requires-python = ">=3.11"
 
 dependencies = [
-    "PyYAML"
+    "PyYAML>=6.0",
+    "google-api-python-client>=2.0.0",
+    "google-auth>=2.0.0",
+    "google-auth-oauthlib>=1.2.0",
+    "google-auth-httplib2>=0.2.0",
+    "google-cloud-storage>=3.0.0",
+    "google-cloud-bigquery>=3.30.0",
 ]
 
 [tool.setuptools.packages.find]
