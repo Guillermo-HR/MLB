@@ -220,3 +220,4 @@ __marimo__/
 # VS Code
 .vscode/
 .databricks
+__builtins__.pyi
