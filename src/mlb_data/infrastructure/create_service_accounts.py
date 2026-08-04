@@ -20,9 +20,7 @@ def create_service_account(project_id: str,service_account: dict,) -> None:
         )
 
         print(f"Service account {account_id} created successfully.")
-
     except GCloudError as error:
-
         if "already exists" in str(error):
             print(f"Service account {account_id} already exists.")
         else:
