@@ -1,11 +1,5 @@
-from pathlib import Path
+from mlb_data.utils.paths import CONFIG_DIR
 import yaml
-
-# Root directory of the project
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-
-# Configuration directory
-CONFIG_DIR = PROJECT_ROOT / "config"
 
 def load_yaml(*paths: str) -> dict:
     """

@@ -6,7 +6,7 @@ import subprocess
 class GCloudError(RuntimeError):
     """Exception raised when a gcloud command fails."""
 
-def run_command(executable: str,*args: str,) -> CompletedProcess[str]:
+def run_command(executable: str,*args: str) -> CompletedProcess[str]:
     """
     Execute a Google Cloud CLI command.
 
@@ -41,8 +41,6 @@ def run_command(executable: str,*args: str,) -> CompletedProcess[str]:
 
     command = [executable_path, *args]
 
-    print("Running command:", " ".join(command))
-
     result = subprocess.run(
         command,
         capture_output=True,
@@ -54,7 +52,7 @@ def run_command(executable: str,*args: str,) -> CompletedProcess[str]:
 
     return result
 
-def run_gcloud(*args: str, project: str | None = None,) -> CompletedProcess[str]:
+def run_gcloud(*args: str, project: str | None = None) -> CompletedProcess[str]:
     command = list(args)
 
     if project:
@@ -65,7 +63,7 @@ def run_gcloud(*args: str, project: str | None = None,) -> CompletedProcess[str]
         *command,
     )
 
-def run_bq(*args: str, project: str | None = None,) -> CompletedProcess[str]:
+def run_bq(*args: str, project: str | None = None) -> CompletedProcess[str]:
     command = []
 
     if project:
