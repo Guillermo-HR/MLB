@@ -1,0 +1,8 @@
+catalog: mlb
+
+schemas:
+  - name: bronze
+    comment: Raw and minimally processed MLB data
+
+  - name: silver
+    comment: Cleaned and transformed MLB data
