@@ -85,13 +85,13 @@ def create_catalog(
 def main() -> None:
     console.print_header("Create Catalog")
 
-    config = load_yaml(
+    catalog_config = load_yaml(
         "infrastructure",
         "databricks",
         "catalog.yaml",
     )
 
-    create_catalog(config["catalog"])
+    create_catalog(catalog_config["catalog"])
 
     console.print_footer("Create Catalog")
 
