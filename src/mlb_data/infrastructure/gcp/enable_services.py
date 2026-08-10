@@ -5,7 +5,7 @@ Enable the Google Cloud services required by the project.
 """
 
 from mlb_data.utils.config_loader import load_yaml
-from mlb_data.utils.gcloud import GCloudError, run_gcloud
+from mlb_data.infrastructure.gcp.gcloud import GCloudError, run_gcloud
 from mlb_data.utils import console
 
 def service_enabled(
