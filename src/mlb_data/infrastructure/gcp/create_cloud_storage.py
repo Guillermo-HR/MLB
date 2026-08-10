@@ -5,7 +5,7 @@ Create the Google Cloud storage bucket required by the project.
 """
 
 from mlb_data.utils.config_loader import load_yaml
-from mlb_data.utils.gcloud import run_gcloud, GCloudError
+from mlb_data.infrastructure.gcp.gcloud import run_gcloud, GCloudError
 from mlb_data.utils import console
 from pathlib import Path
 import json
