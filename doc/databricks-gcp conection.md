@@ -31,7 +31,6 @@ databricks secrets list-scopes
 You have to add the following keys to the secret scope:
 - project_id
 - private_key_id
-- private_key
 - client_email
 - client_id
 - token_uri
@@ -39,3 +38,8 @@ You have to add the following keys to the secret scope:
 databricks secrets put-secret mlb-gcp <KEY_NAME>
 ```
 After executing the command, you will be prompted to paste the value of the key. You have to repeat this process for each key.
+
+For private_key, you have to include the new line characters in the value. You can do this by using the following command:
+```
+$json = Get-Content -Raw "<PATH_TO_JSON_KEY_FILE>" | ConvertFrom-Json; databricks secrets put-secret mlb-gcp private_key --string-value "$($json.private_key)"
+```
