@@ -28,18 +28,9 @@ To validate that the secret scope was created, you can run:
 databricks secrets list-scopes
 ```
 ## Adding keys to the secret scope
-You have to add the following keys to the secret scope:
-- project_id
-- private_key_id
-- client_email
-- client_id
-- token_uri
+To upload the service account key to the secret scope, run the script below, replacing `<PATH_TO_JSON_KEY>` with the path to the JSON key file you downloaded from GCP.
 ```
-databricks secrets put-secret mlb-gcp <KEY_NAME>
-```
-After executing the command, you will be prompted to paste the value of the key. You have to repeat this process for each key.
+cd src/mlb_data/infrastructure/databricks/load_gcp_secrets.py
 
-For private_key, you have to include the new line characters in the value. You can do this by using the following command:
-```
-$json = Get-Content -Raw "<PATH_TO_JSON_KEY_FILE>" | ConvertFrom-Json; databricks secrets put-secret mlb-gcp private_key --string-value "$($json.private_key)"
+python load_gcp_secrets.py "<PATH_TO_JSON_KEY>"
 ```
