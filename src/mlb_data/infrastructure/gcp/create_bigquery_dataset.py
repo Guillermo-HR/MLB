@@ -5,7 +5,7 @@ Create the BigQuery dataset required by the project.
 """
 
 from mlb_data.utils.config_loader import load_yaml
-from mlb_data.utils.gcloud import run_bq, GCloudError
+from mlb_data.infrastructure.gcp.gcloud import run_bq, GCloudError
 from mlb_data.utils import console
 
 def dataset_exists(

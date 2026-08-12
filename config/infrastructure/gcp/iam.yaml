@@ -6,27 +6,25 @@ bindings:
 
     members:
 
-      cloud_run:
-
-        role: roles/storage.objectAdmin
-
       databricks:
-
         role: roles/storage.objectAdmin
 
   bigquery:
 
     dataset: mlb_gold
 
-    members:
+    dataset_members:
 
       databricks:
-
-        role: roles/bigquery.dataEditor
+        roles:
+          - roles/bigquery.dataEditor
 
       power_bi:
-
         roles:
-
           - roles/bigquery.dataViewer
+
+    project_members:
+
+      power_bi:
+        roles:
           - roles/bigquery.jobUser
