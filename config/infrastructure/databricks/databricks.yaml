@@ -1,0 +1,5 @@
+profile: mlb
+
+sql_warehouse:
+  server_hostname: dbc-55357501-eeb1.cloud.databricks.com
+  http_path: /sql/1.0/warehouses/fc386a3e35deba57

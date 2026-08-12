@@ -1,0 +1,27 @@
+bucket:
+
+  name: mlb-data-lake
+
+  storage_class: STANDARD
+
+  uniform_bucket_level_access: true
+
+  versioning: false
+
+  folders:
+
+    - schedule/
+    - game/
+    - player/
+    - team/
+    - lookup/
+
+  lifecycle:
+
+    delete_after_days: 30
+
+    prefixes:
+
+      - schedule/
+
+      - game/

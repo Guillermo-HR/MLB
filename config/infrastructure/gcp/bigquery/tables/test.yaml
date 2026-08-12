@@ -1,0 +1,31 @@
+table:
+  id: game_test
+  description: test table
+
+  schema:
+
+    - name: game_id
+      type: INTEGER
+      mode: REQUIRED
+
+    - name: game_date
+      type: DATE
+      mode: REQUIRED
+
+    - name: team_id
+      type: INTEGER
+      mode: REQUIRED
+
+    - name: opponent_team_id
+      type: INTEGER
+      mode: REQUIRED
+
+    - name: is_home
+      type: BOOLEAN
+      mode: REQUIRED
+
+  partition:
+    field: game_date
+
+  clustering:
+    - team_id

@@ -1,0 +1,30 @@
+bindings:
+
+  cloud_storage:
+
+    bucket: mlb-data-lake
+
+    members:
+
+      databricks:
+        role: roles/storage.objectAdmin
+
+  bigquery:
+
+    dataset: mlb_gold
+
+    dataset_members:
+
+      databricks:
+        roles:
+          - roles/bigquery.dataEditor
+
+      power_bi:
+        roles:
+          - roles/bigquery.dataViewer
+
+    project_members:
+
+      power_bi:
+        roles:
+          - roles/bigquery.jobUser

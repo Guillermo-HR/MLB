@@ -1,0 +1,37 @@
+catalogs:
+
+  mlb:
+
+    MLB Ingestion:
+      privileges:
+        - USE CATALOG
+
+    MLB Processing:
+      privileges:
+        - USE CATALOG
+
+schemas:
+
+  mlb.bronze:
+
+    MLB Ingestion:
+      privileges:
+        - USE SCHEMA
+        - SELECT
+        - CREATE TABLE
+        - MODIFY
+
+    MLB Processing:
+      privileges:
+        - USE SCHEMA
+        - SELECT
+
+
+  mlb.silver:
+
+    MLB Processing:
+      privileges:
+        - USE SCHEMA
+        - SELECT
+        - CREATE TABLE
+        - MODIFY
