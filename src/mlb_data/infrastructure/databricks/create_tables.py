@@ -98,8 +98,6 @@ def validate_table_config(
     Validate a Databricks table configuration.
     """
 
-    console.print_step("Validating", "table configuration")
-
     required_fields = [
         "name",
         "schema",
@@ -161,8 +159,6 @@ def validate_table_config(
         column_names.add(column_name)
 
     validate_partition(table_config, column_names)
-
-    console.print_success()
 
 def build_column_definition(
     column: dict,
