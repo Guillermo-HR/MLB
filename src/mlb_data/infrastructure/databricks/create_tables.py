@@ -171,11 +171,15 @@ def build_column_definition(
     name = column["name"]
     data_type = column["type"].upper()
     nullable = column.get("nullable", True)
+    description = column.get("description")
 
     definition = f"`{name}` {data_type}"
 
     if not nullable:
         definition += " NOT NULL"
+
+    if description:
+        definition += f" COMMENT '{description}'"
 
     return definition
 
