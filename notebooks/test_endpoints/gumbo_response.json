@@ -335,7 +335,7 @@
                 "lastName": "Hedges",
                 "primaryNumber": "27",
                 "birthDate": "1992-08-18",
-                "currentAge": 33,
+                "currentAge": 34,
                 "birthCity": "San Juan Capistrano",
                 "birthStateProvince": "CA",
                 "birthCountry": "USA",
@@ -490,10 +490,10 @@
                 "weight": 220,
                 "active": true,
                 "primaryPosition": {
-                    "code": "10",
-                    "name": "Designated Hitter",
-                    "type": "Hitter",
-                    "abbreviation": "DH"
+                    "code": "3",
+                    "name": "First Base",
+                    "type": "Infielder",
+                    "abbreviation": "1B"
                 },
                 "useName": "Nathaniel",
                 "useLastName": "Lowe",
@@ -679,7 +679,7 @@
                 "lastName": "McGonigle",
                 "primaryNumber": "7",
                 "birthDate": "2004-08-18",
-                "currentAge": 21,
+                "currentAge": 22,
                 "birthCity": "Media",
                 "birthStateProvince": "PA",
                 "birthCountry": "USA",
@@ -1216,7 +1216,7 @@
                 "lastName": "Keith",
                 "primaryNumber": "33",
                 "birthDate": "2001-08-14",
-                "currentAge": 24,
+                "currentAge": 25,
                 "birthCity": "Zanesville",
                 "birthStateProvince": "OH",
                 "birthCountry": "USA",
@@ -1323,10 +1323,10 @@
                 "weight": 150,
                 "active": true,
                 "primaryPosition": {
-                    "code": "5",
-                    "name": "Third Base",
+                    "code": "4",
+                    "name": "Second Base",
                     "type": "Infielder",
-                    "abbreviation": "3B"
+                    "abbreviation": "2B"
                 },
                 "useName": "Angel",
                 "useLastName": "Genao",
@@ -1353,8 +1353,8 @@
                 "initLastName": "A Genao",
                 "fullFMLName": "Angel Luis Genao",
                 "fullLFMName": "Genao, Angel Luis",
-                "strikeZoneTop": 3.177,
-                "strikeZoneBottom": 1.603
+                "strikeZoneTop": 3.18,
+                "strikeZoneBottom": 1.6
             },
             "ID656716": {
                 "id": 656716,
@@ -1807,7 +1807,7 @@
                 "lastName": "Sommers",
                 "primaryNumber": "51",
                 "birthDate": "2000-08-14",
-                "currentAge": 25,
+                "currentAge": 26,
                 "birthCity": "Hoffman Estates",
                 "birthStateProvince": "IL",
                 "birthCountry": "USA",
@@ -2594,7 +2594,7 @@
                 "lastName": "D\u00edaz",
                 "primaryNumber": "62",
                 "birthDate": "2000-08-19",
-                "currentAge": 25,
+                "currentAge": 26,
                 "birthCity": "Guatire",
                 "birthCountry": "Venezuela",
                 "height": "6' 0\"",
@@ -35499,6 +35499,91 @@
                                     "splits": [
                                         {
                                             "stat": {
+                                                "name": "exitVelocity",
+                                                "zones": [
+                                                    {
+                                                        "zone": "01",
+                                                        "color": "rgba(234, 147, 153, .55)",
+                                                        "temp": "warm",
+                                                        "value": "89.88"
+                                                    },
+                                                    {
+                                                        "zone": "02",
+                                                        "color": "rgba(214, 41, 52, .55)",
+                                                        "temp": "hot",
+                                                        "value": "93.04"
+                                                    },
+                                                    {
+                                                        "zone": "03",
+                                                        "color": "rgba(150, 188, 255, .55)",
+                                                        "temp": "cool",
+                                                        "value": "87.81"
+                                                    },
+                                                    {
+                                                        "zone": "04",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "85.00"
+                                                    },
+                                                    {
+                                                        "zone": "05",
+                                                        "color": "rgba(214, 41, 52, .55)",
+                                                        "temp": "hot",
+                                                        "value": "94.90"
+                                                    },
+                                                    {
+                                                        "zone": "06",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "85.45"
+                                                    },
+                                                    {
+                                                        "zone": "07",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "83.74"
+                                                    },
+                                                    {
+                                                        "zone": "08",
+                                                        "color": "rgba(214, 41, 52, .55)",
+                                                        "temp": "hot",
+                                                        "value": "92.95"
+                                                    },
+                                                    {
+                                                        "zone": "09",
+                                                        "color": "rgba(255, 255, 255, 0.55)",
+                                                        "temp": "lukewarm",
+                                                        "value": "89.20"
+                                                    },
+                                                    {
+                                                        "zone": "11",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "74.46"
+                                                    },
+                                                    {
+                                                        "zone": "12",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "83.79"
+                                                    },
+                                                    {
+                                                        "zone": "13",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "69.26"
+                                                    },
+                                                    {
+                                                        "zone": "14",
+                                                        "color": "rgba(6, 90, 238, .55)",
+                                                        "temp": "cold",
+                                                        "value": "83.47"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "stat": {
                                                 "name": "onBasePlusSlugging",
                                                 "zones": [
                                                     {
@@ -35523,13 +35608,13 @@
                                                         "zone": "04",
                                                         "color": "rgba(6, 90, 238, .55)",
                                                         "temp": "cold",
-                                                        "value": ".469"
+                                                        "value": ".441"
                                                     },
                                                     {
                                                         "zone": "05",
                                                         "color": "rgba(214, 41, 52, .55)",
                                                         "temp": "hot",
-                                                        "value": "1.098"
+                                                        "value": "1.071"
                                                     },
                                                     {
                                                         "zone": "06",
@@ -35541,25 +35626,25 @@
                                                         "zone": "07",
                                                         "color": "rgba(6, 90, 238, .55)",
                                                         "temp": "cold",
-                                                        "value": ".348"
+                                                        "value": ".296"
                                                     },
                                                     {
                                                         "zone": "08",
-                                                        "color": "rgba(234, 147, 153, .55)",
-                                                        "temp": "warm",
-                                                        "value": ".775"
+                                                        "color": "rgba(255, 255, 255, 0.55)",
+                                                        "temp": "lukewarm",
+                                                        "value": ".738"
                                                     },
                                                     {
                                                         "zone": "09",
-                                                        "color": "rgba(150, 188, 255, .55)",
-                                                        "temp": "cool",
-                                                        "value": ".640"
+                                                        "color": "rgba(255, 255, 255, 0.55)",
+                                                        "temp": "lukewarm",
+                                                        "value": ".692"
                                                     },
                                                     {
                                                         "zone": "11",
                                                         "color": "rgba(234, 147, 153, .55)",
                                                         "temp": "warm",
-                                                        "value": ".778"
+                                                        "value": ".786"
                                                     },
                                                     {
                                                         "zone": "12",
@@ -35569,15 +35654,15 @@
                                                     },
                                                     {
                                                         "zone": "13",
-                                                        "color": "rgba(255, 255, 255, 0.55)",
-                                                        "temp": "lukewarm",
-                                                        "value": ".705"
+                                                        "color": "rgba(150, 188, 255, .55)",
+                                                        "temp": "cool",
+                                                        "value": ".674"
                                                     },
                                                     {
                                                         "zone": "14",
                                                         "color": "rgba(6, 90, 238, .55)",
                                                         "temp": "cold",
-                                                        "value": ".500"
+                                                        "value": ".488"
                                                     }
                                                 ]
                                             }
@@ -35608,13 +35693,13 @@
                                                         "zone": "04",
                                                         "color": "rgba(150, 188, 255, .55)",
                                                         "temp": "cool",
-                                                        "value": ".219"
+                                                        "value": ".206"
                                                     },
                                                     {
                                                         "zone": "05",
                                                         "color": "rgba(214, 41, 52, .55)",
                                                         "temp": "hot",
-                                                        "value": ".375"
+                                                        "value": ".366"
                                                     },
                                                     {
                                                         "zone": "06",
@@ -35626,19 +35711,19 @@
                                                         "zone": "07",
                                                         "color": "rgba(6, 90, 238, .55)",
                                                         "temp": "cold",
-                                                        "value": ".174"
+                                                        "value": ".148"
                                                     },
                                                     {
                                                         "zone": "08",
                                                         "color": "rgba(234, 147, 153, .55)",
                                                         "temp": "warm",
-                                                        "value": ".275"
+                                                        "value": ".262"
                                                     },
                                                     {
                                                         "zone": "09",
-                                                        "color": "rgba(150, 188, 255, .55)",
-                                                        "temp": "cool",
-                                                        "value": ".208"
+                                                        "color": "rgba(255, 255, 255, 0.55)",
+                                                        "temp": "lukewarm",
+                                                        "value": ".240"
                                                     },
                                                     {
                                                         "zone": "11",
@@ -35656,98 +35741,13 @@
                                                         "zone": "13",
                                                         "color": "rgba(255, 255, 255, 0.55)",
                                                         "temp": "lukewarm",
-                                                        "value": ".259"
+                                                        "value": ".241"
                                                     },
                                                     {
                                                         "zone": "14",
                                                         "color": "rgba(6, 90, 238, .55)",
                                                         "temp": "cold",
-                                                        "value": ".161"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "stat": {
-                                                "name": "exitVelocity",
-                                                "zones": [
-                                                    {
-                                                        "zone": "01",
-                                                        "color": "rgba(234, 147, 153, .55)",
-                                                        "temp": "warm",
-                                                        "value": "89.88"
-                                                    },
-                                                    {
-                                                        "zone": "02",
-                                                        "color": "rgba(214, 41, 52, .55)",
-                                                        "temp": "hot",
-                                                        "value": "93.04"
-                                                    },
-                                                    {
-                                                        "zone": "03",
-                                                        "color": "rgba(150, 188, 255, .55)",
-                                                        "temp": "cool",
-                                                        "value": "87.81"
-                                                    },
-                                                    {
-                                                        "zone": "04",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "85.43"
-                                                    },
-                                                    {
-                                                        "zone": "05",
-                                                        "color": "rgba(214, 41, 52, .55)",
-                                                        "temp": "hot",
-                                                        "value": "94.82"
-                                                    },
-                                                    {
-                                                        "zone": "06",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "85.45"
-                                                    },
-                                                    {
-                                                        "zone": "07",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "82.72"
-                                                    },
-                                                    {
-                                                        "zone": "08",
-                                                        "color": "rgba(214, 41, 52, .55)",
-                                                        "temp": "hot",
-                                                        "value": "93.16"
-                                                    },
-                                                    {
-                                                        "zone": "09",
-                                                        "color": "rgba(255, 255, 255, 0.55)",
-                                                        "temp": "lukewarm",
-                                                        "value": "89.64"
-                                                    },
-                                                    {
-                                                        "zone": "11",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "74.46"
-                                                    },
-                                                    {
-                                                        "zone": "12",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "83.79"
-                                                    },
-                                                    {
-                                                        "zone": "13",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "70.35"
-                                                    },
-                                                    {
-                                                        "zone": "14",
-                                                        "color": "rgba(6, 90, 238, .55)",
-                                                        "temp": "cold",
-                                                        "value": "83.47"
+                                                        "value": ".156"
                                                     }
                                                 ]
                                             }
@@ -35779,13 +35779,13 @@
                                 "zone": "04",
                                 "color": "rgba(6, 90, 238, .55)",
                                 "temp": "cold",
-                                "value": ".469"
+                                "value": ".441"
                             },
                             {
                                 "zone": "05",
                                 "color": "rgba(214, 41, 52, .55)",
                                 "temp": "hot",
-                                "value": "1.098"
+                                "value": "1.071"
                             },
                             {
                                 "zone": "06",
@@ -35797,25 +35797,25 @@
                                 "zone": "07",
                                 "color": "rgba(6, 90, 238, .55)",
                                 "temp": "cold",
-                                "value": ".348"
+                                "value": ".296"
                             },
                             {
                                 "zone": "08",
-                                "color": "rgba(234, 147, 153, .55)",
-                                "temp": "warm",
-                                "value": ".775"
+                                "color": "rgba(255, 255, 255, 0.55)",
+                                "temp": "lukewarm",
+                                "value": ".738"
                             },
                             {
                                 "zone": "09",
-                                "color": "rgba(150, 188, 255, .55)",
-                                "temp": "cool",
-                                "value": ".640"
+                                "color": "rgba(255, 255, 255, 0.55)",
+                                "temp": "lukewarm",
+                                "value": ".692"
                             },
                             {
                                 "zone": "11",
                                 "color": "rgba(234, 147, 153, .55)",
                                 "temp": "warm",
-                                "value": ".778"
+                                "value": ".786"
                             },
                             {
                                 "zone": "12",
@@ -35825,15 +35825,15 @@
                             },
                             {
                                 "zone": "13",
-                                "color": "rgba(255, 255, 255, 0.55)",
-                                "temp": "lukewarm",
-                                "value": ".705"
+                                "color": "rgba(150, 188, 255, .55)",
+                                "temp": "cool",
+                                "value": ".674"
                             },
                             {
                                 "zone": "14",
                                 "color": "rgba(6, 90, 238, .55)",
                                 "temp": "cold",
-                                "value": ".500"
+                                "value": ".488"
                             }
                         ],
                         "pitcherHotColdZones": [],
@@ -36431,6 +36431,91 @@
                                 "splits": [
                                     {
                                         "stat": {
+                                            "name": "exitVelocity",
+                                            "zones": [
+                                                {
+                                                    "zone": "01",
+                                                    "color": "rgba(234, 147, 153, .55)",
+                                                    "temp": "warm",
+                                                    "value": "89.88"
+                                                },
+                                                {
+                                                    "zone": "02",
+                                                    "color": "rgba(214, 41, 52, .55)",
+                                                    "temp": "hot",
+                                                    "value": "93.04"
+                                                },
+                                                {
+                                                    "zone": "03",
+                                                    "color": "rgba(150, 188, 255, .55)",
+                                                    "temp": "cool",
+                                                    "value": "87.81"
+                                                },
+                                                {
+                                                    "zone": "04",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "85.00"
+                                                },
+                                                {
+                                                    "zone": "05",
+                                                    "color": "rgba(214, 41, 52, .55)",
+                                                    "temp": "hot",
+                                                    "value": "94.90"
+                                                },
+                                                {
+                                                    "zone": "06",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "85.45"
+                                                },
+                                                {
+                                                    "zone": "07",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "83.74"
+                                                },
+                                                {
+                                                    "zone": "08",
+                                                    "color": "rgba(214, 41, 52, .55)",
+                                                    "temp": "hot",
+                                                    "value": "92.95"
+                                                },
+                                                {
+                                                    "zone": "09",
+                                                    "color": "rgba(255, 255, 255, 0.55)",
+                                                    "temp": "lukewarm",
+                                                    "value": "89.20"
+                                                },
+                                                {
+                                                    "zone": "11",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "74.46"
+                                                },
+                                                {
+                                                    "zone": "12",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "83.79"
+                                                },
+                                                {
+                                                    "zone": "13",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "69.26"
+                                                },
+                                                {
+                                                    "zone": "14",
+                                                    "color": "rgba(6, 90, 238, .55)",
+                                                    "temp": "cold",
+                                                    "value": "83.47"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "stat": {
                                             "name": "onBasePlusSlugging",
                                             "zones": [
                                                 {
@@ -36455,13 +36540,13 @@
                                                     "zone": "04",
                                                     "color": "rgba(6, 90, 238, .55)",
                                                     "temp": "cold",
-                                                    "value": ".469"
+                                                    "value": ".441"
                                                 },
                                                 {
                                                     "zone": "05",
                                                     "color": "rgba(214, 41, 52, .55)",
                                                     "temp": "hot",
-                                                    "value": "1.098"
+                                                    "value": "1.071"
                                                 },
                                                 {
                                                     "zone": "06",
@@ -36473,25 +36558,25 @@
                                                     "zone": "07",
                                                     "color": "rgba(6, 90, 238, .55)",
                                                     "temp": "cold",
-                                                    "value": ".348"
+                                                    "value": ".296"
                                                 },
                                                 {
                                                     "zone": "08",
-                                                    "color": "rgba(234, 147, 153, .55)",
-                                                    "temp": "warm",
-                                                    "value": ".775"
+                                                    "color": "rgba(255, 255, 255, 0.55)",
+                                                    "temp": "lukewarm",
+                                                    "value": ".738"
                                                 },
                                                 {
                                                     "zone": "09",
-                                                    "color": "rgba(150, 188, 255, .55)",
-                                                    "temp": "cool",
-                                                    "value": ".640"
+                                                    "color": "rgba(255, 255, 255, 0.55)",
+                                                    "temp": "lukewarm",
+                                                    "value": ".692"
                                                 },
                                                 {
                                                     "zone": "11",
                                                     "color": "rgba(234, 147, 153, .55)",
                                                     "temp": "warm",
-                                                    "value": ".778"
+                                                    "value": ".786"
                                                 },
                                                 {
                                                     "zone": "12",
@@ -36501,15 +36586,15 @@
                                                 },
                                                 {
                                                     "zone": "13",
-                                                    "color": "rgba(255, 255, 255, 0.55)",
-                                                    "temp": "lukewarm",
-                                                    "value": ".705"
+                                                    "color": "rgba(150, 188, 255, .55)",
+                                                    "temp": "cool",
+                                                    "value": ".674"
                                                 },
                                                 {
                                                     "zone": "14",
                                                     "color": "rgba(6, 90, 238, .55)",
                                                     "temp": "cold",
-                                                    "value": ".500"
+                                                    "value": ".488"
                                                 }
                                             ]
                                         }
@@ -36540,13 +36625,13 @@
                                                     "zone": "04",
                                                     "color": "rgba(150, 188, 255, .55)",
                                                     "temp": "cool",
-                                                    "value": ".219"
+                                                    "value": ".206"
                                                 },
                                                 {
                                                     "zone": "05",
                                                     "color": "rgba(214, 41, 52, .55)",
                                                     "temp": "hot",
-                                                    "value": ".375"
+                                                    "value": ".366"
                                                 },
                                                 {
                                                     "zone": "06",
@@ -36558,19 +36643,19 @@
                                                     "zone": "07",
                                                     "color": "rgba(6, 90, 238, .55)",
                                                     "temp": "cold",
-                                                    "value": ".174"
+                                                    "value": ".148"
                                                 },
                                                 {
                                                     "zone": "08",
                                                     "color": "rgba(234, 147, 153, .55)",
                                                     "temp": "warm",
-                                                    "value": ".275"
+                                                    "value": ".262"
                                                 },
                                                 {
                                                     "zone": "09",
-                                                    "color": "rgba(150, 188, 255, .55)",
-                                                    "temp": "cool",
-                                                    "value": ".208"
+                                                    "color": "rgba(255, 255, 255, 0.55)",
+                                                    "temp": "lukewarm",
+                                                    "value": ".240"
                                                 },
                                                 {
                                                     "zone": "11",
@@ -36588,98 +36673,13 @@
                                                     "zone": "13",
                                                     "color": "rgba(255, 255, 255, 0.55)",
                                                     "temp": "lukewarm",
-                                                    "value": ".259"
+                                                    "value": ".241"
                                                 },
                                                 {
                                                     "zone": "14",
                                                     "color": "rgba(6, 90, 238, .55)",
                                                     "temp": "cold",
-                                                    "value": ".161"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "stat": {
-                                            "name": "exitVelocity",
-                                            "zones": [
-                                                {
-                                                    "zone": "01",
-                                                    "color": "rgba(234, 147, 153, .55)",
-                                                    "temp": "warm",
-                                                    "value": "89.88"
-                                                },
-                                                {
-                                                    "zone": "02",
-                                                    "color": "rgba(214, 41, 52, .55)",
-                                                    "temp": "hot",
-                                                    "value": "93.04"
-                                                },
-                                                {
-                                                    "zone": "03",
-                                                    "color": "rgba(150, 188, 255, .55)",
-                                                    "temp": "cool",
-                                                    "value": "87.81"
-                                                },
-                                                {
-                                                    "zone": "04",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "85.43"
-                                                },
-                                                {
-                                                    "zone": "05",
-                                                    "color": "rgba(214, 41, 52, .55)",
-                                                    "temp": "hot",
-                                                    "value": "94.82"
-                                                },
-                                                {
-                                                    "zone": "06",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "85.45"
-                                                },
-                                                {
-                                                    "zone": "07",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "82.72"
-                                                },
-                                                {
-                                                    "zone": "08",
-                                                    "color": "rgba(214, 41, 52, .55)",
-                                                    "temp": "hot",
-                                                    "value": "93.16"
-                                                },
-                                                {
-                                                    "zone": "09",
-                                                    "color": "rgba(255, 255, 255, 0.55)",
-                                                    "temp": "lukewarm",
-                                                    "value": "89.64"
-                                                },
-                                                {
-                                                    "zone": "11",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "74.46"
-                                                },
-                                                {
-                                                    "zone": "12",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "83.79"
-                                                },
-                                                {
-                                                    "zone": "13",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "70.35"
-                                                },
-                                                {
-                                                    "zone": "14",
-                                                    "color": "rgba(6, 90, 238, .55)",
-                                                    "temp": "cold",
-                                                    "value": "83.47"
+                                                    "value": ".156"
                                                 }
                                             ]
                                         }
@@ -36711,13 +36711,13 @@
                             "zone": "04",
                             "color": "rgba(6, 90, 238, .55)",
                             "temp": "cold",
-                            "value": ".469"
+                            "value": ".441"
                         },
                         {
                             "zone": "05",
                             "color": "rgba(214, 41, 52, .55)",
                             "temp": "hot",
-                            "value": "1.098"
+                            "value": "1.071"
                         },
                         {
                             "zone": "06",
@@ -36729,25 +36729,25 @@
                             "zone": "07",
                             "color": "rgba(6, 90, 238, .55)",
                             "temp": "cold",
-                            "value": ".348"
+                            "value": ".296"
                         },
                         {
                             "zone": "08",
-                            "color": "rgba(234, 147, 153, .55)",
-                            "temp": "warm",
-                            "value": ".775"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": ".738"
                         },
                         {
                             "zone": "09",
-                            "color": "rgba(150, 188, 255, .55)",
-                            "temp": "cool",
-                            "value": ".640"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": ".692"
                         },
                         {
                             "zone": "11",
                             "color": "rgba(234, 147, 153, .55)",
                             "temp": "warm",
-                            "value": ".778"
+                            "value": ".786"
                         },
                         {
                             "zone": "12",
@@ -36757,15 +36757,15 @@
                         },
                         {
                             "zone": "13",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": ".705"
+                            "color": "rgba(150, 188, 255, .55)",
+                            "temp": "cool",
+                            "value": ".674"
                         },
                         {
                             "zone": "14",
                             "color": "rgba(6, 90, 238, .55)",
                             "temp": "cold",
-                            "value": ".500"
+                            "value": ".488"
                         }
                     ],
                     "pitcherHotColdZones": [],
