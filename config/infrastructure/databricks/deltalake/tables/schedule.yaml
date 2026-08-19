@@ -1,0 +1,30 @@
+table:
+  name: schedule
+  schema: bronze
+  description: Schedule of games
+
+  columns:
+    - name: game_date
+      type: DATE
+      nullable: false
+      description: Date of the game
+
+    - name: game_id
+      type: BIGINT
+      nullable: false
+      description: Unique identifier for the game
+
+    - name: processing_is_complete
+      type: BOOLEAN
+      nullable: false
+      description: Flag indicating if the processing of the game is complete
+
+    - name: ingestion_timestamp
+      type: TIMESTAMP
+      nullable: false
+      description: Timestamp of when the data was ingested
+    
+    - name: last_updated_timestamp
+      type: TIMESTAMP
+      nullable: false
+      description: Timestamp of the last update to the record
