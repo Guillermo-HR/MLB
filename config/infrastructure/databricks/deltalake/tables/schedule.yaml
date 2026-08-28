@@ -12,7 +12,7 @@ table:
     - name: game_id
       type: BIGINT
       nullable: false
-      description: Unique identifier for the game
+      description: MLB unique identifier for the game
 
     - name: processing_is_complete
       type: BOOLEAN
@@ -23,8 +23,3 @@ table:
       type: TIMESTAMP
       nullable: false
       description: Timestamp of when the data was ingested
-    
-    - name: last_updated_timestamp
-      type: TIMESTAMP
-      nullable: false
-      description: Timestamp of the last update to the record
