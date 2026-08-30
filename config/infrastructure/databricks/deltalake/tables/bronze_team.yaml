@@ -18,6 +18,3 @@ table:
       type: TIMESTAMP
       nullable: false
       description: Timestamp of when the data was ingested
-
-  partition:
-    field: game_date
