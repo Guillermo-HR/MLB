@@ -1,0 +1,33 @@
+table:
+  name: game
+  schema: bronze
+  description: This table contains the raw JSON response from the MLB API for a specific game.
+
+  columns:
+    - name: game_pk
+      type: INT
+      nullable: false
+      description: MLB unique identifier for the game
+
+    - name: game_date
+      type: DATE
+      nullable: false
+      description: Date of the game
+
+    - name: season
+      type: INT
+      nullable: false
+      description: MLB season year
+
+    - name: raw_response
+      type: STRING
+      nullable: false
+      description: Raw JSON response from the MLB API
+
+    - name: ingestion_timestamp
+      type: TIMESTAMP
+      nullable: false
+      description: Timestamp of when the data was ingested
+
+  partition:
+    field: season

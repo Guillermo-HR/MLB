@@ -9,17 +9,25 @@ table:
       nullable: false
       description: Date of the game
 
-    - name: game_id
+    - name: season
+      type: INT
+      nullable: false
+      description: MLB season year
+
+    - name: game_pk
       type: BIGINT
       nullable: false
       description: MLB unique identifier for the game
 
-    - name: processing_is_complete
-      type: BOOLEAN
+    - name: game_status
+      type: STRING
       nullable: false
-      description: Flag indicating if the processing of the game is complete
+      description: Flag indicating the status of the game
 
     - name: ingestion_timestamp
       type: TIMESTAMP
       nullable: false
       description: Timestamp of when the data was ingested
+
+  partition:
+    field: season
