@@ -5,9 +5,20 @@
 bundle:
   name: MLB
 
+include:
+  - resources/databricks/**/*.yml
+
+sync:
+  exclude:
+    - .vscode/
+    - .venv/
+    - .databricks/
+    - docs/
+    - documentation/
+    - README.md
+
 targets:
-  dev:
-    mode: development
+  prod:
     default: true
     workspace:
       host: https://dbc-55357501-eeb1.cloud.databricks.com

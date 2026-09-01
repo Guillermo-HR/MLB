@@ -1,0 +1,51 @@
+{
+    "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+    "leagues": [
+        {
+            "id": 104,
+            "name": "National League",
+            "link": "/api/v1/league/104",
+            "abbreviation": "NL",
+            "nameShort": "National",
+            "seasonState": "inseason",
+            "hasWildCard": true,
+            "hasSplitSeason": false,
+            "numGames": 162,
+            "hasPlayoffPoints": false,
+            "numTeams": 15,
+            "numWildcardTeams": 3,
+            "seasonDateInfo": {
+                "seasonId": "2026",
+                "preSeasonStartDate": "2026-01-01",
+                "preSeasonEndDate": "2026-02-19",
+                "seasonStartDate": "2026-02-20",
+                "springStartDate": "2026-02-20",
+                "springEndDate": "2026-03-24",
+                "regularSeasonStartDate": "2026-03-25",
+                "lastDate1stHalf": "2026-07-14",
+                "allStarDate": "2026-07-14",
+                "firstDate2ndHalf": "2026-07-19",
+                "regularSeasonEndDate": "2026-09-27",
+                "postSeasonStartDate": "2026-09-28",
+                "postSeasonEndDate": "2026-10-31",
+                "seasonEndDate": "2026-10-31",
+                "offseasonStartDate": "2026-11-01",
+                "offSeasonEndDate": "2026-12-31",
+                "seasonLevelGamedayType": "P",
+                "gameLevelGamedayType": "P",
+                "qualifierPlateAppearances": 3.1,
+                "qualifierOutsPitched": 3.0
+            },
+            "season": "2026",
+            "orgCode": "NL",
+            "conferencesInUse": false,
+            "divisionsInUse": true,
+            "sport": {
+                "id": 1,
+                "link": "/api/v1/sports/1"
+            },
+            "sortOrder": 31,
+            "active": true
+        }
+    ]
+}

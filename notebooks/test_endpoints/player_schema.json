@@ -1,0 +1,157 @@
+{
+    "type": "object",
+    "properties": {
+        "copyright": {
+            "type": "string"
+        },
+        "people": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "fullName": {
+                        "type": "string"
+                    },
+                    "link": {
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "type": "string"
+                    },
+                    "primaryNumber": {
+                        "type": "string"
+                    },
+                    "birthDate": {
+                        "type": "string"
+                    },
+                    "currentAge": {
+                        "type": "integer"
+                    },
+                    "birthCity": {
+                        "type": "string"
+                    },
+                    "birthStateProvince": {
+                        "type": "string"
+                    },
+                    "birthCountry": {
+                        "type": "string"
+                    },
+                    "height": {
+                        "type": "string"
+                    },
+                    "weight": {
+                        "type": "integer"
+                    },
+                    "active": {
+                        "type": "boolean"
+                    },
+                    "primaryPosition": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "abbreviation": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "useName": {
+                        "type": "string"
+                    },
+                    "useLastName": {
+                        "type": "string"
+                    },
+                    "middleName": {
+                        "type": "string"
+                    },
+                    "boxscoreName": {
+                        "type": "string"
+                    },
+                    "nickName": {
+                        "type": "string"
+                    },
+                    "gender": {
+                        "type": "string"
+                    },
+                    "isPlayer": {
+                        "type": "boolean"
+                    },
+                    "isVerified": {
+                        "type": "boolean"
+                    },
+                    "draftYear": {
+                        "type": "integer"
+                    },
+                    "mlbDebutDate": {
+                        "type": "string"
+                    },
+                    "batSide": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "pitchHand": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "nameFirstLast": {
+                        "type": "string"
+                    },
+                    "nameSlug": {
+                        "type": "string"
+                    },
+                    "firstLastName": {
+                        "type": "string"
+                    },
+                    "lastFirstName": {
+                        "type": "string"
+                    },
+                    "lastInitName": {
+                        "type": "string"
+                    },
+                    "initLastName": {
+                        "type": "string"
+                    },
+                    "fullFMLName": {
+                        "type": "string"
+                    },
+                    "fullLFMName": {
+                        "type": "string"
+                    },
+                    "strikeZoneTop": {
+                        "type": "number"
+                    },
+                    "strikeZoneBottom": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}

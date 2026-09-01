@@ -105,56 +105,55 @@ def validate_table_config(
         "columns",
     ]
 
+    valid_schemas = ["bronze", "silver"]
+
     for field in required_fields:
         if field not in table_config:
             console.print_failed()
             console.print_error(f"Missing required table property: {field}")
             raise ValueError(f"Missing required table property: {field}")
 
-    if table_config["schema"] not in {"bronze", "silver"}:
+    if table_config["schema"] not in valid_schemas:
         console.print_failed()
-        console.print_error("invalid schema. Expected 'bronze' or 'silver'.")
-        raise ValueError(
-            f"Invalid schema '{table_config['schema']}'. "
-            "Expected 'bronze' or 'silver'."
-        )
+        console.print_error(f"invalid schema {table_config['schema']}. Expected {', '.join(valid_schemas)}.")
+        raise ValueError(f"invalid schema {table_config['schema']}. Expected {', '.join(valid_schemas)}.")
 
     if not table_config["columns"]:
         console.print_failed()
         console.print_error("Table must contain at least one column.")
-        raise ValueError(
-            f"Table '{table_config['name']}' "
-            "must contain at least one column."
-        )
+        raise ValueError(f"Table '{table_config['name']}' must contain at least one column.")
+
+    is_delta_table = table_config.get("is_delta_table", True)
+    if not isinstance(is_delta_table, bool):
+        console.print_failed()
+        console.print_error("is_delta_table must be a boolean value.")
+        raise ValueError(f"Table '{table_config['name']}' has an invalid 'is_delta_table' value. Must be a boolean.")
 
     column_names = set()
 
-    for column in table_config["columns"]:
-        if "name" not in column:
-            console.print_failed()
-            console.print_error("Column definition missing 'name' property.")
-            raise ValueError(
-                f"Table '{table_config['name']}' "
-                "contains a column without a name."
-            )
+    required_fields_for_columns = [
+        "name",
+        "type"
+    ]
 
-        if "type" not in column:
-            console.print_failed()
-            console.print_error("Column definition missing 'type' property.")
-            raise ValueError(
-                f"Column '{column['name']}' in table "
-                f"'{table_config['name']}' "
-                "does not define a type."
-            )
+    for column in table_config["columns"]:
+        for field in required_fields_for_columns:
+            if field not in column:
+                console.print_failed()
+                console.print_error(f"Column definition missing '{field}' property.")
+                raise ValueError(f"Column definition in table '{table_config['name']}' missing required property: {field}")
 
         column_name = column["name"]
         if column_name in column_names:
             console.print_failed()
             console.print_error("Duplicate column name found in table configuration.")
-            raise ValueError(
-                f"Duplicate column '{column_name}' "
-                f"in table '{table_config['name']}'."
-            )
+            raise ValueError(f"Duplicate column '{column_name}' in table '{table_config['name']}'.")
+
+        nullable = column.get("nullable", False)
+        if not isinstance(nullable, bool):
+            console.print_failed()
+            console.print_error(f"Column '{column_name}' has an invalid 'nullable' value. Must be a boolean.")
+            raise ValueError(f"Column '{column_name}' in table '{table_config['name']}' has an invalid 'nullable' value. Must be a boolean.")
 
         column_names.add(column_name)
 
@@ -170,12 +169,16 @@ def build_column_definition(
 
     name = column["name"]
     data_type = column["type"].upper()
-    nullable = column.get("nullable", True)
 
     definition = f"`{name}` {data_type}"
 
+    nullable = column.get("nullable", False)
     if not nullable:
         definition += " NOT NULL"
+
+    description = column.get("description")
+    if description:
+        definition += f" COMMENT '{description}'"
 
     return definition
 
@@ -200,13 +203,20 @@ def build_create_table_sql(
         `{catalog}`.`{schema}`.`{table_name}` (
         {columns}
         )
-        USING DELTA
     """
+
+    is_delta_table = table_config.get("is_delta_table", True)
+    if is_delta_table:
+        statement += "USING DELTA\n"
 
     partition = table_config.get("partition")
     if partition:
         field = partition["field"]
         statement += f"PARTITIONED BY (`{field}`)\n"
+
+    description = table_config.get("description")
+    if description:
+        statement += f"COMMENT '{description}'\n"
 
     return statement
 
@@ -216,7 +226,7 @@ def create_table(
     table_config: dict,
 ) -> None:
     """
-    Create a Databricks Delta table.
+    Create a Databricks table.
     """
 
     table_name = table_config["name"]
@@ -252,7 +262,7 @@ def create_tables(
     catalog: str,
 ) -> None:
     """
-    Create all configured Databricks Delta tables.
+    Create all configured Databricks tables.
     """
 
     for yaml_file in sorted(TABLES_DIR.glob("*.yaml")):
@@ -273,10 +283,10 @@ def create_tables(
 
 def main() -> None:
     """
-    Create all configured Databricks Delta tables.
+    Create all configured Databricks tables.
     """
 
-    console.print_header("Creating Databricks Delta tables")
+    console.print_header("Creating Databricks tables")
 
     catalog_config = load_yaml(
             "infrastructure",

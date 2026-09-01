@@ -1,0 +1,17 @@
+table:
+  name: team
+  schema: bronze
+  description: This table contains raw information about the teams.
+
+  columns:
+    - name: team_id
+      type: INT
+      description: MLB unique identifier for the team
+
+    - name: raw_response
+      type: STRING
+      description: Raw JSON response from the MLB API
+
+    - name: ingestion_timestamp
+      type: TIMESTAMP
+      description: Timestamp of when the data was ingested

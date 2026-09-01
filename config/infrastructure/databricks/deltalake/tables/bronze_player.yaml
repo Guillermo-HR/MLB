@@ -1,0 +1,21 @@
+table:
+  name: player
+  schema: bronze
+  description: This table contains the raw JSON response from the MLB API for a specific player.
+
+  columns:
+    - name: player_id
+      type: INT
+      description: MLB unique identifier for the player
+
+    - name: is_active
+      type: BOOLEAN
+      description: Indicates if the player is currently active
+
+    - name: raw_response
+      type: STRING
+      description: Raw JSON response from the MLB API
+
+    - name: ingestion_timestamp
+      type: TIMESTAMP
+      description: Timestamp of when the data was ingested

@@ -1,0 +1,2578 @@
+{
+    "type": "object",
+    "properties": {
+        "copyright": {
+            "type": "string"
+        },
+        "teams": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "left": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "left": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "right": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "left": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "right": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "left": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "left": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "right": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "left": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "right": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "springLeague": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "allStarStatus": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "season": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "fieldInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "capacity": {
+                                            "type": "integer"
+                                        },
+                                        "turfType": {
+                                            "type": "string"
+                                        },
+                                        "roofType": {
+                                            "type": "string"
+                                        },
+                                        "leftLine": {
+                                            "type": "integer"
+                                        },
+                                        "leftCenter": {
+                                            "type": "integer"
+                                        },
+                                        "center": {
+                                            "type": "integer"
+                                        },
+                                        "rightCenter": {
+                                            "type": "integer"
+                                        },
+                                        "rightLine": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                },
+                                "season": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "springVenue": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "teamCode": {
+                            "type": "string"
+                        },
+                        "fileCode": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": "string"
+                        },
+                        "teamName": {
+                            "type": "string"
+                        },
+                        "locationName": {
+                            "type": "string"
+                        },
+                        "firstYearOfPlay": {
+                            "type": "string"
+                        },
+                        "league": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "division": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "sport": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "shortName": {
+                            "type": "string"
+                        },
+                        "franchiseName": {
+                            "type": "string"
+                        },
+                        "clubName": {
+                            "type": "string"
+                        },
+                        "active": {
+                            "type": "boolean"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
