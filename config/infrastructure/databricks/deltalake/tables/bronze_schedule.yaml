@@ -2,32 +2,29 @@ table:
   name: schedule
   schema: bronze
   description: Schedule of games
+  is_delta_table: false
 
   columns:
-    - name: game_date
-      type: DATE
-      nullable: false
-      description: Date of the game
-
-    - name: season
-      type: INT
-      nullable: false
-      description: MLB season year
-
     - name: game_pk
       type: BIGINT
-      nullable: false
       description: MLB unique identifier for the game
+
+    - name: game_type
+      type: STRING
+      description: Type of game (e.g., Regular Season, Postseason)
 
     - name: game_status
       type: STRING
-      nullable: false
       description: Flag indicating the status of the game
 
-    - name: ingestion_timestamp
+    - name: last_update_timestamp
       type: TIMESTAMP
-      nullable: false
-      description: Timestamp of when the data was ingested
+      description: Timestamp of when the data was last updated
 
-  partition:
-    field: season
+    - name: is_post_day_reprocessed
+      type: BOOLEAN
+      description: Flag indicating if the game data has been reprocessed for post-day updates
+
+    - name: post_day_reprocessed_timestamp
+      type: TIMESTAMP
+      description: Timestamp of when the data was last validated for post-day checks
