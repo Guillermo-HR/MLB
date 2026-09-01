@@ -2,7 +2,6 @@ table:
   name: schedule
   schema: bronze
   description: Schedule of games
-  is_delta_table: false
 
   columns:
     - name: game_pk
