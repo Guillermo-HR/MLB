@@ -1,0 +1,146 @@
+{
+    "type": "object",
+    "properties": {
+        "copyright": {
+            "type": "string"
+        },
+        "leagues": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "link": {
+                        "type": "string"
+                    },
+                    "abbreviation": {
+                        "type": "string"
+                    },
+                    "nameShort": {
+                        "type": "string"
+                    },
+                    "seasonState": {
+                        "type": "string"
+                    },
+                    "hasWildCard": {
+                        "type": "boolean"
+                    },
+                    "hasSplitSeason": {
+                        "type": "boolean"
+                    },
+                    "numGames": {
+                        "type": "integer"
+                    },
+                    "hasPlayoffPoints": {
+                        "type": "boolean"
+                    },
+                    "numTeams": {
+                        "type": "integer"
+                    },
+                    "numWildcardTeams": {
+                        "type": "integer"
+                    },
+                    "seasonDateInfo": {
+                        "type": "object",
+                        "properties": {
+                            "seasonId": {
+                                "type": "string"
+                            },
+                            "preSeasonStartDate": {
+                                "type": "string"
+                            },
+                            "preSeasonEndDate": {
+                                "type": "string"
+                            },
+                            "seasonStartDate": {
+                                "type": "string"
+                            },
+                            "springStartDate": {
+                                "type": "string"
+                            },
+                            "springEndDate": {
+                                "type": "string"
+                            },
+                            "regularSeasonStartDate": {
+                                "type": "string"
+                            },
+                            "lastDate1stHalf": {
+                                "type": "string"
+                            },
+                            "allStarDate": {
+                                "type": "string"
+                            },
+                            "firstDate2ndHalf": {
+                                "type": "string"
+                            },
+                            "regularSeasonEndDate": {
+                                "type": "string"
+                            },
+                            "postSeasonStartDate": {
+                                "type": "string"
+                            },
+                            "postSeasonEndDate": {
+                                "type": "string"
+                            },
+                            "seasonEndDate": {
+                                "type": "string"
+                            },
+                            "offseasonStartDate": {
+                                "type": "string"
+                            },
+                            "offSeasonEndDate": {
+                                "type": "string"
+                            },
+                            "seasonLevelGamedayType": {
+                                "type": "string"
+                            },
+                            "gameLevelGamedayType": {
+                                "type": "string"
+                            },
+                            "qualifierPlateAppearances": {
+                                "type": "number"
+                            },
+                            "qualifierOutsPitched": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "season": {
+                        "type": "string"
+                    },
+                    "orgCode": {
+                        "type": "string"
+                    },
+                    "conferencesInUse": {
+                        "type": "boolean"
+                    },
+                    "divisionsInUse": {
+                        "type": "boolean"
+                    },
+                    "sport": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "link": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "sortOrder": {
+                        "type": "integer"
+                    },
+                    "active": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}

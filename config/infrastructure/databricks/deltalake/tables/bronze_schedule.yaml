@@ -1,0 +1,30 @@
+table:
+  name: schedule
+  schema: bronze
+  description: Schedule of games
+  is_delta_table: false
+
+  columns:
+    - name: game_pk
+      type: BIGINT
+      description: MLB unique identifier for the game
+
+    - name: game_type
+      type: STRING
+      description: Type of game (e.g., Regular Season, Postseason)
+
+    - name: game_status
+      type: STRING
+      description: Flag indicating the status of the game
+
+    - name: last_update_timestamp
+      type: TIMESTAMP
+      description: Timestamp of when the data was last updated
+
+    - name: is_post_day_reprocessed
+      type: BOOLEAN
+      description: Flag indicating if the game data has been reprocessed for post-day updates
+
+    - name: post_day_reprocessed_timestamp
+      type: TIMESTAMP
+      description: Timestamp of when the data was last validated for post-day checks
