@@ -16,10 +16,6 @@ table:
       type: STRING
       description: Raw JSON response from the MLB API
 
-    - name: raw_response_hash
-      type: STRING
-      description: SHA-256 hash of the raw JSON response from the MLB API
-
     - name: ingestion_timestamp
       type: TIMESTAMP
       description: Timestamp of when the data was ingested
