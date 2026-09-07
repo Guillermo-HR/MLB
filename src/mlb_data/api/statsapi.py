@@ -6,17 +6,17 @@ BASE_URLS = {
 }
 
 def get_data(url_v, endpoint, params=None, timeout=None):
-        if url_v not in BASE_URLS:
-            raise ValueError(f"Unsupported StatsAPI version: {url_v}")
+    if url_v not in BASE_URLS:
+        raise ValueError(f"Unsupported StatsAPI version: {url_v}")
 
-        url = f"{BASE_URLS[url_v]}{endpoint}"
+    url = f"{BASE_URLS[url_v]}{endpoint}"
 
-        response = requests.get(
-            url,
-            params=params,
-            timeout=timeout
-        )
+    response = requests.get(
+        url,
+        params=params,
+        timeout=timeout
+    )
 
-        response.raise_for_status()
+    response.raise_for_status()
 
-        return response.json()
+    return response.json()
