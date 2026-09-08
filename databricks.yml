@@ -8,6 +8,12 @@ bundle:
 include:
   - resources/databricks/*/*.yaml
 
+artifacts:
+  default:
+    type: whl
+    build: python -m build
+    path: .
+
 sync:
   exclude:
     - .vscode/
