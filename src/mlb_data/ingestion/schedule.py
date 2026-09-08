@@ -36,7 +36,7 @@ def process_schedule(schedule, timestamp):
     Args:
         schedule (list): A list of games scheduled for a specific day.
     Returns:
-        list: A list of processed game information.
+        df: A DataFrame of processed game information.
     """
     processed_schedule = []
     for day in schedule:
