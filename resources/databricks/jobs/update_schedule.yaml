@@ -2,6 +2,10 @@ resources:
   jobs:
     update_schedule:
       name: update_schedule
+
+      run_as:
+        service_principal_name: "MLB Ingestion"
+
       tasks:
         - task_key: ingest_schedule
           spark_python_task:
