@@ -6,7 +6,7 @@ bundle:
   name: MLB
 
 include:
-  - resources/databricks/**/*.yml
+  - resources/databricks/*/*.yaml
 
 artifacts:
   default:
@@ -19,8 +19,8 @@ sync:
     - .vscode/
     - .venv/
     - .databricks/
-    - docs/
-    - documentation/
+    - doc/
+    - notebooks/
     - README.md
 
 targets:
