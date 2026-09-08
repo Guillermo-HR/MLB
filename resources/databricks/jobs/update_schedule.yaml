@@ -3,8 +3,14 @@ resources:
     update_schedule:
       name: update_schedule
 
-      run_as:
-        service_principal_name: "MLB Ingestion"
+      schedule:
+        quartz_cron_expression: "0 0/15 * * * ?"
+        timezone_id: "America/Mexico_City"
+        pause_status: UNPAUSED
+
+      timeout_seconds: 120
+
+
 
       tasks:
         - task_key: ingest_schedule

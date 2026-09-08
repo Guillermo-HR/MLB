@@ -29,6 +29,9 @@ targets:
     workspace:
       host: https://dbc-55357501-eeb1.cloud.databricks.com
 
+    run_as:
+      user_name: guillermo.hre@gmail.com
+
   ## Optionally, there could be 'staging' or 'prod' targets here.
   #
   # prod:
