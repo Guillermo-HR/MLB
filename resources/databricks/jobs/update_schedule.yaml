@@ -1,16 +1,22 @@
 resources:
   jobs:
-    ingest_schedule:
-      name: ingest_schedule
+    update_schedule:
+      name: update_schedule
       tasks:
         - task_key: ingest_schedule
           spark_python_task:
             python_file: ../../../src/mlb_data/ingestion/schedule.py
+
           environment_key: Default
+
       queue:
         enabled: true
+
       environments:
         - environment_key: Default
           spec:
             environment_version: "5"
+            dependencies:
+              - ../../../dist/*.whl
+
       performance_target: PERFORMANCE_OPTIMIZED
