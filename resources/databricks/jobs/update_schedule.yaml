@@ -10,8 +10,8 @@ resources:
 
       timeout_seconds: 120
 
-#      run_as:
-#        service_principal_name: "730f929c-a758-42cf-9a67-30054d560f0b"
+      run_as:
+        service_principal_name: "b8a4fae1-e6cd-4be6-88b0-7ad1f200f36f"
 
       tasks:
         - task_key: ingest_schedule
