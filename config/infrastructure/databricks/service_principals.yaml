@@ -1,7 +1,4 @@
 service_principals:
 
-  ingestion:
-    display_name: MLB Ingestion
-
-  processing:
-    display_name: MLB Processing
+  mlb_etl:
+    display_name: MLB ETL
