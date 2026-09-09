@@ -1,35 +1,20 @@
 catalogs:
-
   mlb:
-
-    MLB Ingestion:
-      privileges:
-        - USE CATALOG
-
-    MLB Processing:
+    MLB ETL:
       privileges:
         - USE CATALOG
 
 schemas:
-
   mlb.bronze:
-
-    MLB Ingestion:
+    MLB ETL:
       privileges:
         - USE SCHEMA
         - SELECT
         - CREATE TABLE
         - MODIFY
 
-    MLB Processing:
-      privileges:
-        - USE SCHEMA
-        - SELECT
-
-
   mlb.silver:
-
-    MLB Processing:
+    MLB ETL:
       privileges:
         - USE SCHEMA
         - SELECT

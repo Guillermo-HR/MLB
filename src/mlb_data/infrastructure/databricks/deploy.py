@@ -3,6 +3,7 @@ from mlb_data.infrastructure.databricks.create_service_principals import main as
 from mlb_data.infrastructure.databricks.create_catalog import main as create_catalog
 from mlb_data.infrastructure.databricks.create_schemas import main as create_schemas
 from mlb_data.infrastructure.databricks.create_tables import main as create_tables
+from mlb_data.infrastructure.databricks.grant_permissions import main as grant_permissions
 
 def main() -> None:
     print("="*30)
@@ -12,6 +13,7 @@ def main() -> None:
     create_catalog()
     create_schemas()
     create_tables()
+    grant_permissions()
 
     managed_connection.close_connection()
 
