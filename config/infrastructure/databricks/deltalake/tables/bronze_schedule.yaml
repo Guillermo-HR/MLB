@@ -26,4 +26,5 @@ table:
 
     - name: post_day_reprocessed_timestamp
       type: TIMESTAMP
+      nullable: true
       description: Timestamp of when the data was last validated for post-day checks
