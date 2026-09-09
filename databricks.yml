@@ -6,15 +6,21 @@ bundle:
   name: MLB
 
 include:
-  - resources/databricks/**/*.yml
+  - resources/databricks/*/*.yaml
+
+artifacts:
+  default:
+    type: whl
+    build: python -m build
+    path: .
 
 sync:
   exclude:
     - .vscode/
     - .venv/
     - .databricks/
-    - docs/
-    - documentation/
+    - doc/
+    - notebooks/
     - README.md
 
 targets:
@@ -22,6 +28,7 @@ targets:
     default: true
     workspace:
       host: https://dbc-55357501-eeb1.cloud.databricks.com
+      root_path: /Workspace/MLB/${bundle.name}/${bundle.target}
 
   ## Optionally, there could be 'staging' or 'prod' targets here.
   #
