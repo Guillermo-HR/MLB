@@ -8,8 +8,6 @@ resources:
         timezone_id: "America/Mexico_City"
         pause_status: UNPAUSED
 
-      timeout_seconds: 120
-
       run_as:
         service_principal_name: "b8a4fae1-e6cd-4be6-88b0-7ad1f200f36f"
 
